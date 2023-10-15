@@ -13,7 +13,6 @@ import java.math.BigDecimal;
 @AllArgsConstructor //Makes constructor taking in all arguments
 @NoArgsConstructor //Makes constructor taking in no arguments
 @Builder            //Instantiates objects
-
 public class Product {
 
     @Id

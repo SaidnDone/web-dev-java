@@ -19,6 +19,7 @@ configurations {
 
 repositories {
     mavenCentral()
+
 }
 
 dependencies {
@@ -29,6 +30,11 @@ dependencies {
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    // https://mvnrepository.com/artifact/org.testcontainers/mongodb
+    testImplementation("org.testcontainers:mongodb:1.18.1")
+    // https://mvnrepository.com/artifact/org.testcontainers/testcontainers-bom
+    implementation("org.testcontainers:testcontainers-bom:1.18.1")
+
 }
 
 tasks.withType<Test> {

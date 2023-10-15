@@ -25,8 +25,9 @@ public class ProductController {
     }
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public List<ProductResponse> getAllProducts(){
+    public List<ProductResponse> getProducts(){
         return productService.getProducts();
+
     }
     @PutMapping({"/{productid}"})
     public ResponseEntity<?> updateProduct(@PathVariable("productid") String productid,
